@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | CodersByte</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: rgb(233, 233, 233);
+        }
+
+        nav {
+            position: sticky;
+            top: 0%;
+        }
+
+        .container,
+        .html {
+            margin: 40px;
+        }
+
+        .html {
+            margin-left: 25%;
+            margin-right: 25%;
+            font-size: 18px;
+        }
+
+        .html img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 30px;
+            background-color: rgb(119, 195, 197);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        h1 {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .content img {
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .content p,
+        ul {
+            text-align: left;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: rgb(89, 223, 107);
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: rgb(103, 226, 119);
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+
+        iframe {
+            width: 400px;
+            height: 225px;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 16px;
+        }
+
+        footer a {
+            overflow: hidden;
+            text-decoration: none;
+            color: azure;
+        }
+
+        footer a:hover {
+            color: rgb(121, 226, 135);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="../Home.html"><i class="fa fa-home home"></i></a>
+            <div class="subnav">
+                <button class="subnavbtn">HTML<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="#content-1">Introduction</a>
+                    <a href="#content-2">HTML Tags</a>
+                    <a href="#content-4">Classes & Id</a>
+                    <a href="#content-5">Layout</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">CSS <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="CSS.html#content-1">Introduction</a>
+                    <a href="CSS.html#content-2">Selectors</a>
+                    <a href="CSS.html#content-3">Syntax</a>
+                    <a href="CSS.html#content-4">Box Model</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">JAVASCRIPT <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="JavaScript.html#content-1">Introduction</a>
+                    <a href="JavaScript.html#content-2">Syntax</a>
+                    <a href="JavaScript.html#content-3">Variable</a>
+                    <a href="JavaScript.html#content-4">Operators</a>
+                    <a href="JavaScript.html#content-5">Data Types</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">PHP <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="php.html#content-1">Introduction</a>
+                    <a href="php.html#content-2">Syntax</a>
+                    <a href="php.html#content-3">Variables</a>
+                    <a href="php.html#content-4">Constants</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">MYSQL<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="SQL.html#content-1">Introduction</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">PYTHON <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="Python.html#content-1">Introduction</a>
+                    <a href="Python.html#video">Resourses</a>
+                </div>
+            </div>
+            <a href="../Register.html">REGISTER</a>
+        </div>
+        <div style="padding:0 16px">
+    </nav>
+    <div class="html">
+        <img src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png" alt="html" width="200px">
+        <ul>
+            <h1>HTML</h1>
+            <li>HTML is the standard markup language for Web pages.</li>
+            <li>With HTML you can create your own Website.</li>
+            <li>HTML is easy to learn - You will enjoy it!</li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="content" id="content-1">
+            <h2>INTRODUCTION</h2>
+            <h3>What is HTML?</h3>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+                    link", etc.</li>
+            </ul>
+        </div>
+        <div style="background: lightgreen;" class="content" id="content-2">
+            <h2>ELEMENTS</h2>
+            <h3>HTML Elements</h3>
+            <p>HTML tags are like keywords which defines that how web browser will format and display the content. With
+                the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags
+                contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags.
+                <br>
+
+                When a web browser reads an HTML document, browser reads it from top to bottom and left to right. HTML
+                tags are used to create HTML documents and render their properties. Each HTML tags have different
+                properties.
+                <br>
+                An HTML file must have some essential tags so that web browser can differentiate between a simple text
+                and HTML text. You can use as many tags you want as per your code requirement.
+            </p>
+            <ul>
+                <li>All HTML tags must enclosed within <> these brackets.</li>
+                <li>Every tag in HTML perform different tasks.</li>
+                <li>If you have used an open tag <tag>, then you must use a close tag </tag> (except some tags)</li>
+            </ul>
+            <img src="https://1.bp.blogspot.com/-UnvDPH8lRuU/W-68Io_b0KI/AAAAAAAAAAw/UzQ1_WDzTNc4GPJL7vB1eLEZnMTcji0IQCLcBGAs/s1600/0_eU6H-gxRpslRHfNT.jpg"
+                alt="" width="700px" style="overflow: hidden;">
+        </div>
+        <div style="background: lightsalmon;" class="content" id="content-4">
+            <h2>CLASSES & ID</h2>
+            <p>
+                The class is an attribute which specifies one or more class names for an HTML element. <br>
+                The class attribute can be used on any HTML element. <br>
+                The class name can be used by CSS and JavaScript to perform certain tasks for elements with the
+                specified class name.
+            </p>
+            <br>
+            <p>
+                The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique
+                within the HTML document. The id attribute is used to point to a specific style declaration in a style
+                sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+            </p>
+        </div>
+        <div style="background: lightsteelblue;" class="content" id="content-5">
+            <h2>LAYOUT</h2>
+            <img src="../image/Layout.png" alt="">
+        </div>
+        <div style="background: palegoldenrod;" class="content" style="text-align: center;">
+            <h2>Some useful youtube Tutorials</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rek0NWPCNOc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jRAZlTEZi9I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/61ppyY5rUB0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <a class="right" href="../Home.html">&copy;CodersByte</a>
+    </footer>
+</body>
+
+</html>

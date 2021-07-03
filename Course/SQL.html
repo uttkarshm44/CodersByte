@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | CodersByte</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: rgb(233, 233, 233);
+        }
+
+        nav {
+            position: sticky;
+            top: 0%;
+        }
+
+        .container,
+        .sql {
+            margin: 40px;
+        }
+
+        .sql {
+            margin-left: 25%;
+            margin-right: 25%;
+            font-size: 18px;
+            padding: 50px;
+        }
+
+        .sql ul {
+            padding: 20px;
+        }
+
+        .sql img {
+            float: left;
+            margin: 0 40px 0 0;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 30px;
+            background-color: rgb(119, 195, 197);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        h1 {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .content img {
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .content p,
+        ul {
+            text-align: left;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: rgb(89, 223, 107);
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: rgb(103, 226, 119);
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+
+        iframe {
+            width: 300px;
+            height: 180px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 16px;
+        }
+
+        footer a {
+            overflow: hidden;
+            text-decoration: none;
+            color: azure;
+        }
+
+        footer a:hover {
+            color: rgb(121, 226, 135);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="../Home.html"><i class="fa fa-home home"></i></a>
+            <div class="subnav">
+                <button class="subnavbtn">HTML<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="HTML.html#content-1">Introduction</a>
+                    <a href="HTML.html#content-2">HTML Tags</a>
+                    <a href="HTML.html#content-4">Classes & Id</a>
+                    <a href="HTML.html#content-5">Layout</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">CSS <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="css.html#content-1">Introduction</a>
+                    <a href="css.html#content-2">Selectors</a>
+                    <a href="css.html#content-3">Syntax</a>
+                    <a href="css.html#content-4">Box Model</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">JAVASCRIPT <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="JavaScript.html#content-1">Introduction</a>
+                    <a href="JavaScript.html#content-2">Syntax</a>
+                    <a href="JavaScript.html#content-3">Variable</a>
+                    <a href="JavaScript.html#content-4">Operators</a>
+                    <a href="JavaScript.html#content-5">Data Types</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">PHP <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="php.html#content-1">Introduction</a>
+                    <a href="php.html#content-2">Syntax</a>
+                    <a href="php.html#content-3">Variables</a>
+                    <a href="php.html#content-4">Constants</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">MYSQL<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="#content-1">Introduction</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">PYTHON <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="Python.html#content-1">Introduction</a>
+                    <a href="Python.html#video">Resourses</a>
+                </div>
+            </div>
+            <a href="../Register.html">REGISTER</a>
+        </div>
+        <div style="padding:0 16px">
+    </nav>
+    <div class="sql">
+        <img src="https://th.bing.com/th/id/R255b77e251b19a6d0600634d2ff9b006?rik=LFgM2txNiFwy7A&riu=http%3a%2f%2fsqlbackupandftp.com%2fblog%2fwp-content%2fuploads%2f2015%2f01%2fmysql-logo_2800x2800_pixels1.png&ehk=nBPoTAB5G8HRtK%2f7O9e7uMMM%2fchy1XZ01UocW71SS48%3d&risl=&pid=ImgRaw"
+            alt="" width="200px">
+        <ul>
+            <li>SQL is a standard language for storing, manipulating and retrieving data in databases.
+            </li>
+            <li>Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase,
+                Informix, Postgres, and other database systems.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content" id="content-1">
+            <h2>INTRODUCTION</h2>
+            <p>SQL is a database computer language designed for the retrieval and management of data in a relational
+                database. SQL stands for Structured Query Language. This tutorial will give you a quick start to SQL. It
+                covers most of the topics required for a basic understanding of SQL and to get a feel of how it works.
+            </p>
+            <h3>Why to Learn SQL?</h3>
+            <p>SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving
+                data stored in a relational database.
+                <br>
+                SQL is the standard language for Relational Database System. All the Relational Database Management
+                Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their
+                standard database language.
+            </p>
+            <ul>
+                <p>Also, they are using different dialects, such as −</p>
+                <li>MS SQL Server using T-SQL,</li>
+                <li>Oracle using PL/SQL,</li>
+                <li>MS Access version of SQL is called JET SQL (native format) etc.
+                </li>
+            </ul>
+        </div>
+        <div class="video">
+
+        </div>
+    </div>
+    <footer>
+        <a class="right" href="../Home.html">&copy;CodersByte</a>
+    </footer>
+</body>
+
+</html>

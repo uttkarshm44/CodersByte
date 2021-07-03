@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP | CodersByte</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: rgb(233, 233, 233);
+        }
+
+        nav {
+            position: sticky;
+            top: 0%;
+        }
+
+        .container,
+        .php {
+            margin: 40px;
+        }
+
+        .php {
+            margin-left: 25%;
+            margin-right: 25%;
+            font-size: 18px;
+            padding: 50px;
+        }
+
+        .php ul {
+            padding: 20px;
+        }
+
+        .php img {
+            float: left;
+            margin: 0 40px 0 0;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 30px;
+            background-color: rgb(119, 195, 197);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        h1 {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .content img {
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .content p,
+        ul {
+            text-align: left;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: rgb(89, 223, 107);
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: rgb(103, 226, 119);
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+
+        iframe {
+            width: 300px;
+            height: 180px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 16px;
+        }
+
+        footer a {
+            overflow: hidden;
+            text-decoration: none;
+            color: azure;
+        }
+
+        footer a:hover {
+            color: rgb(121, 226, 135);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="../Home.html"><i class="fa fa-home home"></i></a>
+            <div class="subnav">
+                <button class="subnavbtn">HTML<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="HTML.html#content-1">Introduction</a>
+                    <a href="HTML.html#content-2">HTML Tags</a>
+                    <a href="HTML.html#content-4">Classes & Id</a>
+                    <a href="HTML.html#content-5">Layout</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">CSS <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="css.html#content-1">Introduction</a>
+                    <a href="css.html#content-2">Selectors</a>
+                    <a href="css.html#content-3">Syntax</a>
+                    <a href="css.html#content-4">Box Model</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">JAVASCRIPT <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="JavaScript.html#content-1">Introduction</a>
+                    <a href="JavaScript.html#content-2">Syntax</a>
+                    <a href="JavaScript.html#content-3">Variable</a>
+                    <a href="JavaScript.html#content-4">Operators</a>
+                    <a href="JavaScript.html#content-5">Data Types</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">PHP <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="#content-1">Introduction</a>
+                    <a href="#content-2">Syntax</a>
+                    <a href="#content-3">Variables</a>
+                    <a href="#content-4">Constants</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">MYSQL<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="SQL.html#content-1">Introduction</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">PYTHON <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="Python.html#content-1">Introduction</a>
+                    <a href="Python.html#video">Resourses</a>
+                </div>
+            </div>
+            <a href="../Register.html">REGISTER</a>
+        </div>
+        <div style="padding:0 16px">
+    </nav>
+    <div class="php">
+        <img src="https://th.bing.com/th/id/R3a72704290deda01ad43d1e4cfbf9437?rik=9O7hvLGeJRlo8A&riu=http%3a%2f%2fwww.xappsoftware.com%2fwordpress%2fwp-content%2fuploads%2f2014%2f02%2fPHP.png&ehk=fKRv05mKgrkVrzT1wRddtOKPOo1yM14yTBBcd6WKxRo%3d&risl=&pid=ImgRaw"
+            alt="" width="200px">
+        <ul>
+            <li>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
+            </li>
+            <li>PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</li>
+            <li>PHP 7 is the latest stable release.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content" id="content-1">
+            <h2>INTRODUCTION</h2>
+            <p>PHP is an open-source, interpreted, and object-oriented scripting language that can be executed at the
+                server-side. PHP is well suited for web development. Therefore, it is used to develop web applications
+                (an application that executes on the server and generates the dynamic page.).
+                <br>
+                PHP was created by Rasmus Lerdorf in 1994 but appeared in the market in 1995. PHP 7.4.0 is the latest
+                version of PHP, which was released on 28 November. Some important points need to be noticed about PHP
+                are as followed:
+            </p>
+            <ul>
+                <li>PHP stands for Hypertext Preprocessor.</li>
+                <li>PHP is an interpreted language, i.e., there is no need for compilation.</li>
+                <li>PHP is faster than other scripting languages, for example, ASP and JSP.</li>
+                <li>PHP is a server-side scripting language, which is used to manage the dynamic content of the website.
+                </li>
+                <li>PHP can be embedded into HTML.</li>
+                <li>PHP is an open-source scripting language.</li>
+            </ul>
+        </div>
+        <div class="content" id="content-2">
+            <h2>SYNTAX</h2>
+            <img src="https://th.bing.com/th/id/OIP.hStS3Pciutdtx-SXmgjxZQHaDn?w=298&h=170&c=7&o=5&dpr=1.25&pid=1.7"
+                alt="" width="500px">
+        </div>
+        <div class="content" id="content-3">
+            <h2>VARIABLE</h2>
+            <ul>
+                <p>In PHP, a variable is declared using a $ sign followed by the variable name. Here, some important
+                    points to know about variables:</p>
+                <li>As PHP is a loosely typed language, so we do not need to declare the data types of the variables. It
+                    automatically analyzes the values and makes conversions to its correct datatype.</li>
+                <li>After declaring a variable, it can be reused throughout the code.</li>
+                <li>Assignment Operator (=) is used to assign the value to a variable.</li>
+            </ul>
+            <img src="https://clevertechie.com/img/main/php-variable.png" alt="" width="700px">
+        </div>
+        <div class="content" id="content-4">
+            <h2>CONSTANTS</h2>
+            <ul>
+                <p>PHP constants are name or identifier that can't be changed during the execution of the script except
+                    for magic constants, which are not really constants. PHP constants can be defined by 2 ways:</p>
+                <li>Using define() function</li>
+                <li>Using const keyword</li>
+                <p>Constants are similar to the variable except once they defined, they can never be undefined or
+                    changed. They remain constant across the entire program. PHP constants follow the same PHP variable
+                    rules. For example, it can be started with a letter or underscore only.
+                    <br>
+                    Conventionally, PHP constants should be defined in uppercase letters.
+                </p>
+            </ul>
+            <img src="https://clevertechie.com/img/main/php-constant.png" alt="" width="700px">
+        </div>
+        <div class="content" style="background: palegoldenrod;" class="content" style="text-align: center;">
+            <h2>Some useful youtube Tutorials</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/at19OmH2Bg4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PaDgry5QAt4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4kFg2EqEIv8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <a class="right" href="../Home.html">&copy;CodersByte</a>
+    </footer>
+</body>
+
+</html>

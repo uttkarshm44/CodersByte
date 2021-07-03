@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CodersByte</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: rgb(221, 219, 219);
+        }
+
+        h1 {
+            color: rgb(66, 66, 66);
+            font-size: xx-large;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(64, 64, 65);
+            position: sticky;
+            top: 0%;
+        }
+
+        nav a {
+            font-size: 20px;
+            padding: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            color: rgb(188, 204, 219);
+        }
+
+        .login {
+            margin-left: auto;
+            margin-right: 8%;
+        }
+
+        nav a:hover {
+            color: rgb(46, 45, 45);
+            background-color: rgb(207, 205, 205);
+            transition: 0.5s;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 50px;
+            background-color: rgb(182, 206, 226);
+        }
+
+        div {
+            margin: 100px;
+            border-radius: 25px;
+            background-color: rgb(75, 75, 75);
+            padding: 80px 180px 80px 180px;
+        }
+
+        div:hover {
+            background-color: rgb(58, 57, 57);
+            color: aliceblue;
+            transition: .4s;
+        }
+
+        div * {
+            padding: 5px;
+        }
+
+        div input,
+        select,
+        button {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border-radius: 9px;
+            border: 3px;
+            background-color: white;
+        }
+
+        button {
+            background-color: rgb(195, 195, 196);
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(64, 240, 93);
+            color: rgb(234, 240, 241);
+        }
+
+        div select:hover {
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgb(95, 97, 99);
+            padding: 14px;
+            text-align: right;
+        }
+
+        footer a {
+            color: rgb(188, 204, 219);
+            margin-right: 4%;
+            font-size: 22px;
+        }
+
+        footer a:hover {
+            color: rgb(190, 189, 189);
+        }
+
+        @media screen and (max-width: 1000px) {
+            div {
+                margin: 70px;
+                border-radius: 25px;
+                background-color: rgb(75, 75, 75);
+                padding: 40px 80px 80px 40px;
+            }
+
+            div input,
+            select,
+            button {
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 9px;
+                border: 3px;
+                background-color: white;
+                margin-left: 20px;
+            }
+
+            label {
+                margin-left: 20px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            nav a {
+                padding: 8px;
+                border: 0.5px solid rgb(53, 52, 52);
+                font-size: 14px;
+            }
+
+            #login {
+                margin: 0;
+            }
+        }
+
+        .container1 {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Home.html#courses">Courses</a>
+        <a href="Blogs.html">Blogs</a>
+        <a href="Home.html#about-us">About Us</a>
+        <a href="" id="login" class="login">Register</a>
+    </nav>
+    <h1>Register Here :</h1>
+    <form action="connect.php" method="post">
+        <div class="container">
+
+            <label>Name : </label> <br>
+            <input type="text" placeholder="Enter Your Name" name="Name" required>
+            <br>
+            <label>Email ID : </label><br>
+            <input type="text" placeholder="Enter Your Email ID" name="Email ID" required>
+            <br>
+            <label>Date Of Birth : </label><br>
+            <input type="date" name="Date_Of_Birth" required>
+            <br>
+            <label>Gender : </label><br>
+            <select name="Gender" id="Gender">
+                <option>-- Select your Gender --</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
+            </select>
+            <br>
+            <label>City : </label><br>
+            <input type="text" placeholder="Enter your City" name="City" required>
+            <br> <br>
+            <button type="submit">Submit</button>
+
+        </div>
+    </form>
+    <footer>
+        <a href="Home.html">&copy;2021 | CodersByte</a>
+    </footer>
+</body>
+
+</html>
